@@ -8,7 +8,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'djangoblog.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    url(r'^', include('zinnia.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^weblog/', include('zinnia.urls')),
     url(r'^comments/', include('django.contrib.comments.urls')),
 )
